@@ -1,0 +1,367 @@
+body {
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Open Sans', sans-serif;
+	color:#606060;
+    background-image: url(images/backgr.png) !important;
+}
+
+body>.center-block-main{
+    background: #fff;
+}
+header{
+/*    position: fixed;*/
+    width: 100%;
+	background:#292929;
+    overflow: hidden;
+}
+
+
+.center-block-main{
+	margin: 0 auto;
+	width:80%;
+}
+
+.logo{
+	float:left;
+    width: 80px;
+}
+
+.menu{
+	list-style: none;
+	float:right;
+}
+
+    .menu li{
+        font-weight:600;
+        float:left;
+        border-left: 1px solid rgba(51, 51, 51, 0.52);
+    }
+
+    .menu li:last-child{
+        border-right: 1px solid rgba(51, 51, 51, 0.52);
+    }
+
+    .menu li a{
+        border-bottom: 5px solid rgba(51, 51, 51, 0.52);
+        text-decoration:none;
+        color:#fff;
+        padding: 27px 35px;
+        display:block;
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+    }
+    .menu li a:hover {
+        background-color: rgba(51, 51, 51, 0.52);
+        color: #e51b23;
+        text-decoration:none;
+        border-bottom: 5px solid #e51b23;
+    }
+
+a{
+    color: #e51b23;
+}
+
+.content{
+    border-right: 1px solid #e1e0e0;;
+    border-left: 1px solid #e1e0e0;
+}
+
+main{
+    float: left;
+    width: 62.5%;
+    margin-top: 40px;
+}
+
+    article{
+        margin-bottom: 75px !important;  
+    }
+
+    article>header{
+        font-size: 0;
+        background: none;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    article>header:hover .publish{
+        bottom: 0;
+    }
+
+    article>header img{
+        width: 100%;
+    }
+
+    .publish {
+        box-sizing: border-box;
+        width: 100%;
+        background: rgba(229, 26, 34, 0.56);
+        position: absolute;
+        bottom: -60px;
+        padding: 5px 5px;
+	    font-size: 13px;
+        color: white;
+        -webkit-transition: bottom 0.1s linear;
+        transition: bottom 0.1s linear;
+    }
+    
+    article>h2{
+        font-size: 1.75em;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0 0 40px 15px;
+    }
+    article>p{
+        margin: 0 0 20px 10px;
+        line-height: 1.3;
+    }
+    a.more {
+        border: 2px solid rgba(194, 194, 194, 0.76);
+        border-radius: 20px;
+        padding: 7px 20px;
+        display: inline-block;
+        text-decoration: none;
+        color: #c2c2c2;
+        -webkit-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+    }
+    a.more:hover{
+        border-color:#e51b23; 
+        color: #e51b23;
+    }
+aside{
+    overflow: hidden;
+    float: right;
+    width: 28.3%;
+    margin-top: 40px !important;
+}
+.widget {
+    margin-bottom: 70px;
+}
+
+.widget h2 {
+    text-transform: uppercase;
+    color: #6c6969;
+    background: #f8f8f8;
+    border-left: 3px solid #e51b23;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.op {
+	color: #383838 !important;
+    font-size: 0.75em;
+    width: 100%;
+    border: 1px solid #e1e0e0;
+    border-right: none;
+    padding: 15px 20px !important;
+}
+
+.widget>form>.btn{
+    margin: 0;
+    width: 100%;
+}
+
+.widget nav {
+	margin-left: 20px;
+}
+
+.subscribe {
+	position: relative;
+    width: 100%;
+    height: 48px;
+}
+
+.subscribe-input {
+    color: #b9b9b9;
+    font-size: 0.75em;
+    width: 100%;
+    border: 1px solid #e1e0e0;
+    border-right: none;
+    padding: 15px 55px 15px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subscribe-img {
+	position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.pager {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #e1e0e0;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:30px;
+}
+    .pager a{
+        color:  #818181;
+        text-decoration: none;
+    }
+    .pager a:hover{
+	    text-decoration:underline;
+    }
+    
+    .Previous-link {
+	    float: left;
+    }
+
+    .Next-link {
+	    float: right;
+    }
+
+body>footer{
+    background: #f8f8f8;
+    border-top: 1px solid #e1e0e0;
+    text-align: center;
+    font-size: 0.8125;
+    padding: 25px 0;
+    
+}
+footer img{
+    height: 75px;
+    margin: 0 auto 20px auto;
+}
+
+.center-block-main>h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #6c6969;
+    border-bottom: 1px solid #e1e0e0;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0 auto;
+}
+
+#reg{
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 250px;
+}
+
+.inp{
+    box-sizing: border-box;
+    width: 250px;
+    padding: 5px !important;
+    margin: 5px 0;
+}
+
+.btn{
+    margin: 10px 70px;
+    padding: 10px;
+    color: #f8f8f8;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px solid #292929;
+    border-radius: 3px;
+    background: #292929;
+}
+.btn:hover{
+    color: #e51b23;
+    border-bottom: 3px solid #e51b23;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+/*изменени при наведении на поле, кнопку или ссылку*/
+input:hover{
+/*    background-color: rgba(165, 161, 161, 0.33);*/
+}
+/*изменени при нажатии на поле или кнопку*/
+input:focus{
+    border: 0;
+    box-shadow: 0 0 20px rgba(255, 0, 10, 0.56);
+}
+/*фон и цыет выделенного текста*/
+::-moz-selection { 
+ color: #FFFFFF;
+ background-color: #e51b23;
+}
+::selection { 
+ color: #FFFFFF;
+ background-color: #e51b23;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .logo{    
+    width: 60px;
+    }
+    
+    .menu li a{
+    padding: 17px 35px;
+    }
+    .content{
+        border: none;
+    }
+    aside{
+    float: none;
+    width: 100%;
+    margin-top: 40px!important;
+    }
+    
+    article>header img{
+        width: 100%;
+    }
+        
+    main{
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .center-block-main{
+	margin: 0 auto;
+	width:100%;
+    }
+}
+
+
+
+@media screen and (max-width: 620px){
+    .logo {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    .menu {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .menu li a{    
+        padding: 10px 15px;
+    }
+    
+    .menu li{
+		box-sizing: border-box;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .menu li a{    
+        padding: 12px 15px;
+    }
+    
+    .menu li{
+		box-sizing: border-box;
+        width: 50%;
+    }
+}
+
+
